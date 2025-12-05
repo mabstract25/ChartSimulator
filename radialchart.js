@@ -16,6 +16,12 @@ let controlquestions = document.querySelectorAll('.controlquestion');
 let cautiousquestions = document.querySelectorAll('.cautiousquestion');
 let riskquestions = document.querySelectorAll('.riskquestion');
 
+let dataslider = document.querySelectorAll('.dataslider');
+let controlslider = document.querySelectorAll('.controlslider');
+let cautiousslider = document.querySelectorAll('.cautiousslider');
+let riskslider = document.querySelectorAll('.riskslider');
+
+
 
 function drawChart() {
   
@@ -166,7 +172,25 @@ riskquestions.forEach(question => question.addEventListener("change", e => {
   drawChart();
 }))
 
+dataslider.forEach(slider => slider.addEventListener("change", event => {
+  slider.style.setProperty('--slidercolor','rgba(212, 236, 230, 1)');
+  slider.style.setProperty('--thumbcolor','rgba(148, 207, 192, 1)');
+}))
 
+cautiousslider.forEach(slider => slider.addEventListener("change", event => {
+  slider.style.setProperty('--slidercolor','rgba(254, 233, 180, 1)');
+  slider.style.setProperty('--thumbcolor','rgba(253, 199, 67, 1)');
+}))
+
+controlslider.forEach(slider => slider.addEventListener("change", event => {
+  slider.style.setProperty('--slidercolor','rgba(188, 223, 243, 1)');
+  slider.style.setProperty('--thumbcolor','rgba(87, 174, 226, 1)');
+}))
+
+riskslider.forEach(slider => slider.addEventListener("change", event => {
+  slider.style.setProperty('--slidercolor','rgba(249, 202, 207, 1)');
+  slider.style.setProperty('--thumbcolor','rgba(239, 123, 136, 1)');
+}))
 
 function getAverage(array) {
   let sum = 0
