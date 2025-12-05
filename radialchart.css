@@ -35,7 +35,7 @@ p {
     height: 100vh;
     display: flex;
     justify-content: space-around;
-    background-image: url(/NeuroSphereBG.png);
+    background-image: url(NeuroSphereBG.png);
     background-repeat: none;
     background-size: cover;
 
@@ -97,7 +97,7 @@ p {
 
 
 .DataContainer {
-  background-image:url(/NeuroSphere.svg);
+  background-image:url(NeuroSphere.svg);
   background-repeat: no-repeat;
   background-size: 330px;
   background-position-x: 97px;
